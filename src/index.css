@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+
+body {
+  background: #36454f;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  width: 360px; 
+  margin: auto;
+  padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: white;
+}
+
+/* .register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+} */
+
+.register-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.success-message{
+  font-family: 'Roboto', sans-serif;
+  background-color: #3f89f8;
+  padding: 15px;
+  color: white
+}
+
+.form-field{
+  margin: 10px 0px 10px 0;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #36454f;
+  font-family: 'Roboto',sans-serif;
+}
+input {
+  background: #f2f2f2;
+}
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #3f89f8;
+  margin-bottom: 15px;
+}
+.error {
+  border-style: solid;
+  border: 2px solid #ffa4a4;
+}
+
+button {
+  background: #4550e0;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+/* button: disabled is to disable it and use an event listener or handleChange for the change to enable it
+I beliive I will be using a terinary operator for this   */
